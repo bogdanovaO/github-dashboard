@@ -1,0 +1,133 @@
+.pagination
+  font-family: 'Roboto', sans-serif
+  margin: 20px  -40px 0
+  display: flex
+  list-style: none
+  &__page
+    color: #828482
+    padding: 5px
+    box-sizing: border-box
+    box-shadow: 0px 3px 5px -1px #e0e0e0
+    font-size: 14px
+    cursor: pointer
+    > a 
+      outline: none
+    &_none
+      display: none
+    &:active 
+      color:  #0366d6
+      background: #fff
+      border: 0.6px solid #0366d6 
+    &:hover
+      color: #0366d6
+      background: #fff
+      border: 0.6px solid #0366d6 
+
+
+
+.repository
+  display: flex
+  padding: 10px
+  box-sizing: border-box
+  box-shadow: 0px 0px 7px 0px #f1f8ff
+  margin-bottom: 5px
+  > a
+    text-decoration: none
+  &__name
+    color: #0366d6
+    text-decoration: none
+    flex: 1
+    letter-spacing: 0.05em
+    width: 12em
+  &__stars
+    width: 4em
+    text-align: left
+    display: flex
+    justify-content: space-between
+    font-size: 13px
+  &__update
+    margin-left: 30px
+    font-size: 13px
+  &__link
+    width: 50px
+    color: #28a745
+    font-weight: 200
+
+.textLight
+  color: #828482
+  font-weight: 200
+
+.repositories
+  margin: 0 auto
+  font-family: 'Roboto', sans-serif
+
+  &__header
+    width: 100%
+    background:  #dcffe4
+    height: 50px
+    border: 0.7px solid #e0e0e0
+    border-radius: 2px  2px 0 0
+
+.input
+  background: transparent
+  border: none
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+  color: #333
+  font-size: 16px
+  height: 32px
+  outline: none
+  width: 100%
+  position: relative
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
+  box-shadow: 0px 3px 5px -1px #e0e0e0
+  margin: 20px 0
+  padding-left: 10px
+  &::placeholder 
+    color:  #e0e0e0
+
+.repositoryCard
+  margin: 0 auto
+  font-family: 'Roboto', sans-serif
+
+.cardHeader
+  padding: 20px
+  box-sizing: border-box
+  display: flex
+  justify-content: space-between
+  background: #f1f8ff
+  box-shadow: 0px 3px 5px -1px #e0e0e0
+  margin-bottom: 30px
+  &__name
+    color: #0366d6
+    text-decoration: none
+    letter-spacing: 0.05em
+    flex: 1
+    font-size: 24px
+    > a
+      text-decoration: none
+      color: #000
+
+.cardBody
+  font-weight: 200
+  padding: 20px 0 20px 20px
+  box-sizing: border-box
+  display: grid
+  grid-template-areas: 'ico text'
+  grid-template-columns: 350px 1fr
+  &__star
+    display: flex
+    font-size: 13px
+  &__ico
+    max-width: 300px
+    grid-area: ico
+  &__text
+    grid-area: text
+    display: grid
+  &__desk
+    max-width: 100%
+    word-break: break-all
+  &__title
+    font-size: 20px

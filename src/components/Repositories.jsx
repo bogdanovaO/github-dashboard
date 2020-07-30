@@ -25,7 +25,7 @@ class Repositories extends Component {
       searchText: text,
       currentPage: page
     }, () => {
-      if (this.state.searchText.length > 0 && this.state.searchText.length !== '') {
+      if (this.state.searchText != null && this.state.searchText.length !== '') {
         this.props.search(this.state.searchText, this.state.currentPage)
       } else {
         this.props.getPopularRepositories()
